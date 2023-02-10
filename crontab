@@ -1,0 +1,2 @@
+0 0 * * * bash /root/nginx_log_cut.sh >> /root/nginx_log_cut.log 2>&1 | tee nginx_log_cut_tee.log
+# crontab -e 命令编辑好计划任务程序之后，再输入 systemctl restart crond ，进行crontab程序的重启，让其生效。
